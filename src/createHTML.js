@@ -1,17 +1,18 @@
+// A function to generate cards based on data entered via prompts
 function generateCards(teamMembers) {
-    const cards = teamMembers.map((member) => {
-      const { name, id, email } = member;
-      let memberInfo = '';
-  
-      if (member.role === 'Manager') {
-        memberInfo = `Office Number: ${member.officeNumber}`;
-      } else if (member.role === 'Engineer') {
-        memberInfo = `GitHub: <a href="https://github.com/${member.github}">${member.github}</a>`;
-      } else if (member.role === 'Intern') {
-        memberInfo = `School: ${member.school}`;
-      }
-  
-      return `
+  const cards = teamMembers.map((member) => {
+    const { name, id, email } = member;
+    let memberInfo = "";
+
+    if (member.role === "Manager") {
+      memberInfo = `Office Number: ${member.officeNumber}`;
+    } else if (member.role === "Engineer") {
+      memberInfo = `GitHub: <a href="https://github.com/${member.github}">${member.github}</a>`;
+    } else if (member.role === "Intern") {
+      memberInfo = `School: ${member.school}`;
+    }
+
+    return `
         <div class="card">
           <div class="card-header">
             <h2>${name}</h2>
@@ -26,21 +27,19 @@ function generateCards(teamMembers) {
           </div>
         </div>
       `;
-    });
-  
-    return `
+  });
+
+  return `
       <div class="card-container">
-        ${cards.join('')}
+        ${cards.join("")}
       </div>
     `;
-  }
-  
-  const createHTML = (teamData) => {
-    const cardHTML = generateCards(teamData);
-      // generate HTML code for employee card
-    
-  
-    return `
+}
+// Function to generate HTML code for employee cards
+const createHTML = (teamData) => {
+  const cardHTML = generateCards(teamData);
+
+  return `
       <!DOCTYPE html>
       <html lang="en">
         <head>
@@ -61,7 +60,6 @@ function generateCards(teamMembers) {
         </body>
       </html>
     `;
-  };
+};
 
-  module.exports = createHTML;
-  
+module.exports = createHTML;

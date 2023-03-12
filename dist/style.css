@@ -1,118 +1,117 @@
-/* Global styles */
+/*Global styles*/
 body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* Card styles */
-  .card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
-    padding: 20px;
-  }
-  
-  .card-header {
-    background-color: #007bff;
-    color: #fff;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px 5px 0 0;
-  }
-  
-  .card-body {
-    padding: 10px 0;
-  }
-  
-  .card ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .card li {
-    margin-bottom: 5px;
-  }
-  
-  .card p {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Employee styles */
-  .employee-card {
-    background-color: #f8f8f8;
-  }
-  
-  .employee-card .card-header {
-    background-color: #333;
-  }
-  
-  .employee-card h2 {
-    margin: 0;
-  }
-  
-  .employee-card h3 {
-    margin: 0;
-  }
-  
-  /* Manager styles */
-  .manager-card {
-    background-color: #f0f0f0;
-  }
-  
-  .manager-card .card-header {
-    background-color: #007bff;
-  }
-  
-  .manager-card h2 {
-    margin: 0;
-  }
-  
-  .manager-card h3 {
-    margin: 0;
-  }
-  
-  /* Engineer styles */
-  .engineer-card {
-    background-color: #f8f8f8;
-  }
-  
-  .engineer-card .card-header {
-    background-color: #28a745;
-  }
-  
-  .engineer-card h2 {
-    margin: 0;
-  }
-  
-  .engineer-card h3 {
-    margin: 0;
-  }
-  
-  /* Intern styles */
-  .intern-card {
-    background-color: #f0f0f0;
-  }
-  
-  .intern-card .card-header {
-    background-color: #6c757d;
-  }
-  
-  .intern-card h2 {
-    margin: 0;
-  }
-  
-  .intern-card h3 {
-    margin: 0;
-  }
-  
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Card styles */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.card-header {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px 5px 0 0;
+}
+
+.card-body {
+  padding: 10px 0;
+}
+
+.card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card li {
+  margin-bottom: 5px;
+}
+
+.card p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Employee styles */
+.employee-card {
+  background-color: #f8f8f8;
+}
+
+.employee-card .card-header {
+  background-color: #333;
+}
+
+.employee-card h2 {
+  margin: 0;
+}
+
+.employee-card h3 {
+  margin: 0;
+}
+
+/* Manager styles */
+.manager-card {
+  background-color: #f0f0f0;
+}
+
+.manager-card .card-header {
+  background-color: #007bff;
+}
+
+.manager-card h2 {
+  margin: 0;
+}
+
+.manager-card h3 {
+  margin: 0;
+}
+
+/* Engineer styles */
+.engineer-card {
+  background-color: #f8f8f8;
+}
+
+.engineer-card .card-header {
+  background-color: #28a745;
+}
+
+.engineer-card h2 {
+  margin: 0;
+}
+
+.engineer-card h3 {
+  margin: 0;
+}
+
+/* Intern styles */
+.intern-card {
+  background-color: #f0f0f0;
+}
+
+.intern-card .card-header {
+  background-color: #6c757d;
+}
+
+.intern-card h2 {
+  margin: 0;
+}
+
+.intern-card h3 {
+  margin: 0;
+}
