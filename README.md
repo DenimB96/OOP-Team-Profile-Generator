@@ -18,7 +18,7 @@ https://drive.google.com/file/d/1Bhp2UThv8VcBW92ER0wWZZohU0_mLHcr/view
 
 ## Screenshot
 
-image.png
+![image](https://user-images.githubusercontent.com/120414766/224524175-7bc6959c-d730-4bc4-8a37-8c778033c554.png)
 
 ## Installation
 
