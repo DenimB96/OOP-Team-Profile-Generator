@@ -32,12 +32,14 @@ const managerPrompt = () => {
         }, 
    
     ]).then(answers => {
-        const manager = new Manager(answers.name, answers.id, answers.email, answers.officeNumber);
-        myTeam.push(manager);
+        const teamManager = new manager(answers.name, answers.id, answers.email, answers.officeNumber);
+        myTeam.push(teamManager);
 
         mainMenuPrompt();
     });
 };
+
+managerPrompt();
 
 const engineerPrompt = () => {
     inquirer.prompt([
@@ -62,8 +64,8 @@ const engineerPrompt = () => {
         message: "What is the engineer's GitHub username?",
       },
     ]).then(answers => {
-      const engineer = new Engineer(answers.name, answers.id, answers.email, answers.github);
-      myTeam.push(engineer);
+      const teamEngineer = new engineer(answers.name, answers.id, answers.email, answers.github);
+      myTeam.push(teamEngineer);
   
       mainMenuPrompt();
     });
@@ -92,8 +94,8 @@ const engineerPrompt = () => {
         message: "What is the intern's school?",
       },
     ]).then(answers => {
-      const intern = new Intern(answers.name, answers.id, answers.email, answers.school);
-      myTeam.push(intern);
+      const teamIntern = new intern(answers.name, answers.id, answers.email, answers.school);
+      myTeam.push(teamIntern);
   
       mainMenuPrompt();
     });
@@ -117,7 +119,13 @@ const engineerPrompt = () => {
           break;
         case 'Finish building my team':
           const html = createHTML(myTeam);
-          fs.writeFile('./dist/index.html', html)
+          fs.writeFile('./dist/index.html', html, err => {
+            if (err) {
+              console.error(err);
+              return;
+            }
+            console.log('Team profile page generated successfully!');
+          });          
       }
     });
   };
